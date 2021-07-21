@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Test Post"
+date:   2020-07-22 03:55:40 +0900
+categories: C
+---
+Just Testing Now!
+
+``` c
+#include <stdio.h>
+
+int main(void) {
+
+    int test;
+    char test1;
+
+    printf("Testing Now!");
+
+    return 0;
+}
+```
