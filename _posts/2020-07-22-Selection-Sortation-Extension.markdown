@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Selection Sortation"
+title:  "Selection Sortation Extension"
 date:   2020-07-22 16:42:15 +0900
 categories: C Algorithm
 ---

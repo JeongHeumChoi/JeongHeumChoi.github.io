@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bubble Sortation"
+title:  "Bubble Sortation Extension"
 date:   2020-07-23 21:34:25 +0900
 categories: C Algorithm
 ---
