@@ -49,7 +49,7 @@ int main(void) {
     
     bubbleSortationDescending(std_p, n);
     printf("Bubble sortation descending.");
-    display_list(std_p, n);
+    displayList(std_p, n);
     
     bubbleSortationAscending(std_p, n);
     printf("Bubble sortation ascending.");
