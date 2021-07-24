@@ -3,6 +3,7 @@
 
 <head>
   {%- include head.html -%}
+  <script src="https://kit.fontawesome.com/583e3964d0.js" crossorigin="anonymous"></script>
 </head>
 
 {%- if site.plainwhite.condensed_mobile contains page.layout -%}
@@ -31,6 +32,18 @@
       {%- if site.plainwhite.tagline -%}
       <p class="tagline">{{ site.plainwhite.tagline }}</p>
       {%- endif -%}
+      
+      <table class="my-table">
+          <tr>
+              <th><i class="fas fa-home"></i></th>
+              <td>{{ site.inhabit }}</td>
+          </tr>
+          <tr>
+              <th><i class="fas fa-envelope"></i></th>
+              <td>{{ site.email }}</td>
+          </tr>
+      </table>
+
       </div>
       {% capture footer %}
       {%- if site.plainwhite.social_links != '' -%}
