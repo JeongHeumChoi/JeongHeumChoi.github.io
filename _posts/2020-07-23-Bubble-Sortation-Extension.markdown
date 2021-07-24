@@ -43,17 +43,17 @@ int main(void) {
         exit(1);
     }
     
-    get_score(std_p, n);
+    getScore(std_p, n);
     printf("\nRandom profile generated!");
-    display_list(std_p, n);
+    displayList(std_p, n);
     
-    bubble_sortation_descending(std_p, n);
+    bubbleSortationDescending(std_p, n);
     printf("Bubble sortation descending.");
     display_list(std_p, n);
     
-    bubble_sortation_ascending(std_p, n);
+    bubbleSortationAscending(std_p, n);
     printf("Bubble sortation ascending.");
-    display_list(std_p, n);
+    displayList(std_p, n);
     
     free(std_p);
     
