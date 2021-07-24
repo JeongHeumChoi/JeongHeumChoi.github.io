@@ -23,10 +23,10 @@ typedef struct {
     int math;
 }student;
 
-void get_score(student *std_p, int n);
-void display_list(student *std_p, int n);
-void bubble_sortation_descending(student *std_p, int n);
-void bubble_sortation_ascending(student *std_p, int n);
+void getScore(student *std_p, int n);
+void displayList(student *std_p, int n);
+void bubbleSortationDescending(student *std_p, int n);
+void bubbleSortationAscending(student *std_p, int n);
 
 int main(void) {
     
@@ -60,14 +60,13 @@ int main(void) {
     return 0;
 }
 
-void get_score(student *std_p, int n) {
+void getScore(student *std_p, int n) {
     
     srand((unsigned int)time(NULL));
     
     int i;
     
-    for (i = 0; i < n; i++)
-    {
+    for (i = 0; i < n; i++) {
         (std_p + i)->id = i + 1;
         (std_p + i)->korean = rand() % 101;
         (std_p + i)->english = rand() % 101;
@@ -77,7 +76,7 @@ void get_score(student *std_p, int n) {
     return;
 }
 
-void display_list(student *std_p, int n) {
+void displayList(student *std_p, int n) {
     
     printf("\n\n id\t Korean\tEnglish\t   Math\n");
     for (int i = 0; i < n; i++)
@@ -88,7 +87,7 @@ void display_list(student *std_p, int n) {
     return;
 }
 
-void bubble_sortation_descending(student *std_p, int n) {
+void bubbleSortationDescending(student *std_p, int n) {
     
     student temp;
     int i, j;
@@ -96,6 +95,7 @@ void bubble_sortation_descending(student *std_p, int n) {
     for (i = 0; i < n - 1; i++)
         for (j = 0; j < n - i - 1; j++)
             if ((std_p + j)->korean < (std_p + j + 1)->korean) {
+                // 구조체 하나를 통째로 바꿔주는 것 주의하자.
                 temp = *(std_p + j);
                 *(std_p + j) = *(std_p + j + 1);
                 *(std_p + j + 1) = temp;
@@ -104,7 +104,7 @@ void bubble_sortation_descending(student *std_p, int n) {
     return;
 }
 
-void bubble_sortation_ascending(student *std_p, int n) {
+void bubbleSortationAscending(student *std_p, int n) {
     
     student temp;
     int i, j;
