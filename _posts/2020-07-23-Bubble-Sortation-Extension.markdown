@@ -11,6 +11,7 @@ categories: C Algorithm
 
 전에 Selection Sortation에 적용한 대로 코드를 만들었다.
 
+
 ``` c
 #include <stdio.h>
 #include <stdlib.h>
@@ -119,5 +120,4 @@ void bubbleSortationAscending(student *std_p, int n) {
     
     return;
 }
-
 ```
